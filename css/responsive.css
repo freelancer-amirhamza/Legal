@@ -1,24 +1,9 @@
 /* Large screen */
 @media (min-width:990px){
-    header{
-        display: flex;
-        justify-content: center;
+    .header{
+        background-color:transparent;
     }
-    header .container{
-            position: absolute;
-            background-image: url('https://assets-global.website-files.com/65311391941d4646367f967e/653262376e45c7f44b17c011_Hero.jpg');
-            background-repeat: no-repeat;
-            background-size:cover;
-            background-position:center;
-            min-height:100vh;
-            max-width: 1170px;
-            width: 100%;
-            padding:0 auto;
-     
-    }
-    .hero-section{
-        background-image:unset;
-    }
+  
     .header .logo{
         display: none;
     
@@ -28,10 +13,11 @@
         position: absolute;
         right: 5%;
     }
-    .header .right .menu-btn a{
+    .header .right .menu-btn{
         display: none;
     }
     .menu-bar{
+        margin-top: 0;
         position: absolute;
         top:0;
         left: 96px;
@@ -42,8 +28,10 @@
         transition: all 0.5s;
     }
     .menu-bar{
-        display: block;
-        /* margin-left: -340px; */
+        margin-left: -340px;
+    }
+    .side-bar-active{
+        margin-left:0px;
     }
     .side-bar{
         display: block;
@@ -63,10 +51,9 @@
         top: 0%;
         left: 0%;
         right: auto;
-        bottom: auto;
         z-index: 9999;
     }
-    .side-bar a{
+    .side-bar i{
         position: absolute;
         top: 17px;
         color: #cca028;
@@ -101,20 +88,13 @@
 
 /* medium screen  */
 @media (min-width:768px) and (max-width:990px){
-    header{
-        background-color:unset;
+    .header{
+        background-color:transparent;
     }
     .side-bar{
         display: none;
     }
-    .header .logo{
-        background-color:var(--bg-color);
-        height: 64px;
-        width: 64px;
-        border-radius: 50%;
-        padding: 16px;
     
-    }
     .header .right .cart {
         font-size: 2.5rem;
         background-color: var(--bg-color);
