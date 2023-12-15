@@ -33,10 +33,24 @@ a{
 }
 .container{
     padding: 25px 5%;
+    max-width: 1360px;
 }
 img{
     width: 100%;
     height: 100%;
+}
+.btn{
+    padding: 18px 30px;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    transition: all 0.5s;
+    font-family:  'Barlow Condensed', sans-serif;
+}
+.btn:hover{
+    background-color: var(--hover-color);
 }
 
 /* 
@@ -45,23 +59,14 @@ font-family: 'Gilda Display', serif; */
 header{
     justify-content: center;
     display: flex;
+    position: relative;
+    
 }
- .navbar{
-    position: absolute;
-    background-image: url('https://assets-global.website-files.com/65311391941d4646367f967e/653262376e45c7f44b17c011_Hero.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center;
-    min-height:100vh ;
-    max-width: 1360px;
-    width: 100%;
-    padding: 0 ;
-    top: 0%;
-    overflow-x: hidden;
-}
+
 
 /* header */
 .header{
+    position: absolute;
     display: flex;
     width: 100%;
     align-items: center;
@@ -114,14 +119,32 @@ header{
 .header .right .cart:hover{
     border: 1px solid var(--hover-color);
 }
+/* navbar */
+.navbar{
+    background-image: url('https://assets-global.website-files.com/65311391941d4646367f967e/653262376e45c7f44b17c011_Hero.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height:100vh ;
+    max-width: 1360px;
+    width: 100%;
+    padding: 0 ;
+    top: 0%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    
+}
 
 nav{
     display: flex;
     justify-content: center;
+    align-items: center;
     overflow-x: hidden;
 }
 .menu-bar{
-    position: absolute;
+    position: fixed;
     top: 0%;
     width: 100%;
     left: 0;
@@ -131,6 +154,7 @@ nav{
     text-align: center;
     background-color: #131c3c;
     height: 100%;
+    z-index: 1;
 
 }
 
@@ -164,4 +188,133 @@ opacity: 0;
 .active{
     margin-top: 0;
     opacity: 1;
+}
+/* navbar contents */
+
+.contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 95px ;
+    width: 100%;
+    height:100vh;
+    background-image: radial-gradient(rgba(9, 4, 29, 0.631) , rgba(19, 16, 49, 0.36) , rgba(255, 255, 255, 0));
+}
+.navbar .contents .logo-box{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: var(--bg-color);
+}
+.contents .post {
+    display: flex;
+    text-align: center;
+    padding: 15px 0;
+
+}
+.contents .post span{
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-family:  'Barlow Condensed', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.contents .title{
+    display: flex;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+.contents .title h1{
+    font-size: 4.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.contents .text{
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    height: max-content;
+    padding: 15px 0px;
+}
+.contents .text span{
+    font-size: 2.6rem;
+    font-weight: 500;
+    text-align: center;
+    color:#fff;
+}
+.contents button {
+    margin-top:20px;
+}
+
+
+/* about section */
+
+
+ .about{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+}
+.about .box-item{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -90px;
+}
+
+
+.about .box-item .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 310px;
+    background-color: var(--bg-light);
+    border: 1px solid var(--primary-color);
+    gap: 20px 0;
+
+}
+.about .box-item .box .logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    padding: 15px;
+    
+}
+.about .box-item .box .title h2{
+    font-size: 2.6rem;
+    color: #fff;
+    font-weight: 500;
+}
+.about .box-item .box .text{
+    width: 250px;
+    text-align: center;
+}
+
+.about .box-item .box .text p{
+    font-size: 1.6rem;
+    font-family:  'Barlow Condensed', sans-serif;
+    color: var(--primary-color);
+    letter-spacing: 7px;
+}
+.about .box-item .box .underline{
+    display: flex;
+    background-color: var(--primary-color);
+    height: 1px;
+    width: 40px;
+    margin: 0;
+    padding: 0%;
+    
 }
