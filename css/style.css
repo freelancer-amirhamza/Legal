@@ -676,8 +676,20 @@ padding-top: 10px;
     align-items: center;
 }
 .section-stories .container .cards .card .image{
-    width: 350px;
+    max-width: 350px;
     height: 360px;
+    width:100% ;
+    /* overflow-y: hidden; */
+    cursor: pointer;
+}
+.section-stories .container .cards .card .image img{
+    width: 100%;
+    height: 100%;
+    transition: transform  0.5s ease-in-out;
+    transform: scale(1);
+}
+.section-stories .container .cards .card .image:hover img{
+    transform: scale(1.05);
 }
 .section-stories .container .cards .card .content{
     width: 350px;
@@ -699,7 +711,7 @@ padding-top: 10px;
     align-items: center;
     justify-content: center;
     padding: 20px;
-
+    z-index: 999;
 }
 .section-stories .container .cards .card .content .title h2{
     font-size: 3.2rem;
