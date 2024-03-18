@@ -12,3 +12,4 @@ sideBtn.onclick = () =>{
     sideBtn.classList.toggle('bx-x')
     sideMenu.classList.toggle('active-side-menu')
 }
+
