@@ -60,11 +60,11 @@ ScrollReveal({
     reset:true,
     distance: '100px',
     duration:2000,
-    delay:200,
+    delay:100,
 });
 
-ScrollReveal().reveal(
-' .service .contents, .section-stories .container>.content,  ' , {origin:'left'});
+ScrollReveal({distance:'75px'} ).reveal(
+' .service .contents, .section-stories .container>.content ' , {origin:'left'});
 ScrollReveal().reveal(' .banner>.contents, .service .slider-section, .section-stories .container>.cards ,.testimonial>.content1 ', {origin:'right'});
 ScrollReveal().reveal('.navbar .contents, .copyright', {origin:'top'});
 ScrollReveal().reveal('.box-item, .banner>.image, .section-students, .blogs-wrapper .container>.content, .blogs-wrapper .cards, .newsletter, .footer',{origin:'bottom'});
