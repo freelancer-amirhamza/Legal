@@ -70,6 +70,7 @@
         left: 0%;
         right: auto;
         z-index: 9999;
+        transition:transform 1s ;
     }
     .side-bar i{
         position: absolute;
@@ -124,6 +125,9 @@
     .banner .image{
         max-width:450px;
         height: 600px;
+    }
+    .banner .contents .signature{
+        margin-top: 50px;
     }
 
 
@@ -302,6 +306,13 @@
         width:80% ;
     }
 
+    .footer .container .links-wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        
+    }
+
 
 
 }
@@ -446,7 +457,12 @@ gap: 30px;
     grid-template-columns: repeat( 2, 1fr);
 }
 
-
+.footer .container .links-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    
+}
 
 
 }
